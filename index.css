@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+}
+.maincontainer{
+    margin:30px;
+}
+.mybtn{
+    width: 30%;
+    display: block;
+    margin:auto;
+    font-size: small;
+    padding: 5px;
+}
+.nodisplay{
+    visibility: hidden;
+}
+
+.myfirstsection{
+    margin:auto;
+    /* margin-top: 10px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.mysecimage{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align:center;
+}
+.mysecimage img{
+    border: 2px solid black;
+    width:300px;
+    height: 200px;
+}
+@media(max-width:800px){
+    .myfirstsection{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:500px){
+    .myfirstsection{
+        flex-direction: column;
+    }
+}
+
+.gallery_container{
+    width:80%;
+    display: flex;
+    margin:auto;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    gap:15px;
+}
+.gallery img{
+    height: 100%;
+    width:100%;
+    object-fit:cover;
+    display:block;
+}
+.item1{
+grid-column-start:1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 3;
+}
+.item2{
+    grid-column-start:3;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+.item3{
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item4{
+    grid-column-start:5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item5{
+    grid-column-start:3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item6{
+    grid-column-start:4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item7{
+    grid-column-start:5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item8{
+    grid-column-start:1;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end:5;
+}
+.item9{
+    grid-column-start:3;
+    grid-column-end:7;
+    grid-row-start: 3;
+    grid-row-end:5;
+}
+.mycard{
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:50px;
+    /* margin-bottom:50px; */
+}
+.carditem{
+    justify-content: center;
+    align-items: left;
+    margin: auto;
+    /* text-align:center; */
+}
+@media(max-width:500px){
+    .mycard{
+        flex-direction: column;
+    }
+}
+
+footer{
+    margin: auto;
+    width: 100%;
+}
+
+.footercontainer{
+    background-color: grey;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+}
+.text{
+    text-align: left;
+    height:200px;
+    width:200px;
+}
